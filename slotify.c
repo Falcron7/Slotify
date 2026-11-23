@@ -70,7 +70,7 @@ void parkVehicle(struct Vehicle p[])
     printf("Enter vehicle number: ");
     scanf("%19s", number);
 
-    /* Check duplicate vehicle */
+
     for(i = 0; i < MAX; i++)
     {
         if(p[i].occupied == 1 &&
@@ -81,7 +81,7 @@ void parkVehicle(struct Vehicle p[])
         }
     }
 
-    /* Find empty slot */
+    
     for(i = 0; i < MAX; i++)
     {
         if(p[i].occupied == 0)
